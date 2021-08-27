@@ -1,7 +1,6 @@
 {
-  "name": "LOL client UI",
+  "name": "lol-client-ui",
   "version": "1.0.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -39,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/abdelposada/lol-client-clone/issues"
+  },
+  "homepage": "https://github.com/abdelposada/lol-client-clone#readme"
 }

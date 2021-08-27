@@ -1,0 +1,42 @@
+{
+  "name": "lol-client-api",
+  "version": "1.0.0",
+  "description": "League Of Legends client clone API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon -L --exec npx ts-node -r tsconfig-paths/register src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdelposada/lol-client-clone.git"
+  },
+  "keywords": [
+    "Node",
+    "Typescript",
+    "GraphQL",
+    "Apollo"
+  ],
+  "author": "Abdel Posada",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/abdelposada/lol-client-clone/issues"
+  },
+  "homepage": "https://github.com/abdelposada/lol-client-clone#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.7.2",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.2"
+  }
+}

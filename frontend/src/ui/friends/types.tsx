@@ -2,6 +2,7 @@ export interface IFriend {
   id: number;
   name: string;
   groupId?: number;
+  online?: boolean;
   status?: boolean;
 }
 

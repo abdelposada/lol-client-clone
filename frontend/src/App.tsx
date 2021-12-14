@@ -1,12 +1,19 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUserPlus, faFolderPlus, faSearch, faFilter } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUserPlus,
+  faFolderPlus,
+  faSearch,
+  faFilter,
+  faCaretDown,
+  faCaretRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 import { useMemo } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Friends from './ui/friends';
 import './assets/css/fonts.css';
 
-library.add(faUserPlus, faFolderPlus, faSearch, faFilter);
+library.add(faUserPlus, faFolderPlus, faSearch, faFilter, faCaretDown, faCaretRight);
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -24,13 +31,13 @@ const App = () => {
         id: 1,
         name: 'Leodecko',
         groupId: 4,
-        status: true,
+        online: true,
       },
       {
         id: 2,
         name: 'Shinobu',
         groupId: 3,
-        status: true,
+        online: true,
       },
       {
         id: 3,
@@ -51,7 +58,7 @@ const App = () => {
         id: 6,
         name: 'Nickke',
         groupId: 4,
-        status: false,
+        online: false,
       },
     ],
     []

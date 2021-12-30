@@ -5,7 +5,6 @@ import FriendsList from './FriendsList';
 import { FriendsProps } from './types';
 
 const StyledSocial = styled.div`
-  max-width: 280px;
   height: 100%;
   background-color: ${(props) => props.theme.mainBG};
   color: ${(props) => props.theme.mainColor};

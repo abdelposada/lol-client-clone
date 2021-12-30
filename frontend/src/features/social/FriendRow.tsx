@@ -1,6 +1,6 @@
 import { FC, useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { useGetSummonerByNameQuery } from '../../services/riotApi';
+//import { useGetSummonerByNameQuery } from '../../services/riotApi';
 import { FriendProps, FriendStatus } from './types';
 
 interface FriendMessageProps {
@@ -31,7 +31,7 @@ const StyledFriendIcon = styled.img`
 
 const FriendRow: FC<FriendProps> = ({ name, message, status }) => {
   const [icon, setIcon] = useState(0);
-  const { data } = useGetSummonerByNameQuery('Tatsumaki');
+  // const { data } = useGetSummonerByNameQuery('Tatsumaki');
 
   useEffect(() => {
     setIcon(Math.floor(Math.random() * 5212));

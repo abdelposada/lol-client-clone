@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit'; //PayloadAction
 import { FriendStatus } from './types';
 import { IFriend, IFriendGroup } from './types';
 

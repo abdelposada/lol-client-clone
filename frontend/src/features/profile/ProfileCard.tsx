@@ -11,6 +11,7 @@ interface ProfileCardProps {
 const StyledProfileCard = styled.div`
   display: flex;
   flex-direction: row;
+  background-color: ${(props) => props.theme.mainBG};
 `;
 
 const StyledProfileCardIcon = styled.img`

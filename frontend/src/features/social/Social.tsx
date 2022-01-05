@@ -6,7 +6,6 @@ import { FriendsProps } from './types';
 
 const StyledSocial = styled.div`
   height: 100%;
-  background-color: ${(props) => props.theme.mainBG};
   color: ${(props) => props.theme.mainColor};
 `;
 

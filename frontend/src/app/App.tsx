@@ -21,6 +21,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background-color: #2c2c2c;
   }
+  html, body, #root {
+    height: 100%;
+  }
 `;
 
 const App = () => {
@@ -32,7 +35,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <AppRoutes/>
+      <AppRoutes />
     </ThemeProvider>
   );
 };

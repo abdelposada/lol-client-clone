@@ -13,11 +13,15 @@ const StyledFlex = styled.div`
 const StyledNavbar = styled.div`
   display: flex;
   padding: 0 2rem;
-  flex: 0 0 82.5%;
-  height: 100px;
+  height: calc(100vw / 16);
   justify-content: space-between;
   color: #cdbe91;
   box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #465150;
 `;
 
 const Navbar: FC = () => (

@@ -6,7 +6,6 @@ import MainLayout from '../layouts/MainLayout';
 const DynamicHome = () => {
   const useAuth = () => ({ user: 'fake' });
   const auth = useAuth();
-  console.log('a');
   if (auth.user) {
     return <MainLayout />;
   }

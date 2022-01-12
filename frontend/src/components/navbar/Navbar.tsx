@@ -12,7 +12,7 @@ const StyledFlex = styled.div`
 
 const StyledNavbar = styled.div`
   display: flex;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   height: calc(100vw / 16);
   justify-content: space-between;
   color: #cdbe91;
@@ -29,26 +29,26 @@ const Navbar: FC = () => (
     <StyledFlex>
       <StylishButton>Juega</StylishButton>
       <NavbarMenu>
-        <NavItem>Inicio</NavItem>
-        <NavItem>TFT</NavItem>
-        <NavItem>Clash</NavItem>
+        <NavItem to="/">Inicio</NavItem>
+        <NavItem to="tft">TFT</NavItem>
+        <NavItem to="clash">Clash</NavItem>
       </NavbarMenu>
     </StyledFlex>
     <StyledFlex>
       <NavbarMenu>
-        <NavItem>
+        <NavItem to="profile">
           <FontAwesomeIcon icon={faUserCircle} />
         </NavItem>
-        <NavItem>
+        <NavItem to="collection">
           <FontAwesomeIcon icon={faSuitcase} />
         </NavItem>
-        <NavItem>
+        <NavItem to="loot">
           <FontAwesomeIcon icon={faHammer} />
         </NavItem>
-        <NavItem>
+        <NavItem to="mystore">
           <FontAwesomeIcon icon={faUserCircle} />
         </NavItem>
-        <NavItem>
+        <NavItem to="store">
           <FontAwesomeIcon icon={faCoins} />
         </NavItem>
       </NavbarMenu>

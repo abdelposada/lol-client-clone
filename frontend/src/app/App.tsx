@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: #2c2c2c;
+    letter-spacing: 1px;
   }
   html, body, #root {
     height: 100%;

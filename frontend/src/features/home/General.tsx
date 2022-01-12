@@ -1,10 +1,5 @@
-
 const General = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div style={{ color: 'red' }}>GENERAL</div>;
+};
 
-export default General
+export default General;

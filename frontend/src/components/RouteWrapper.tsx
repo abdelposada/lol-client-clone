@@ -10,6 +10,7 @@ const StyledRouteWrapper = styled.div<RouteWrapperProps>`
   padding-top: calc(100vw / 16);
   box-sizing: border-box;
   background: ${({ background }) => background};
+  /* filter: blur(8px); */
 `;
 
 const RouteWrapper: FC<RouteWrapperProps> = ({ children, background }) => (

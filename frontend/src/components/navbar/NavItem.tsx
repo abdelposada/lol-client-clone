@@ -1,7 +1,8 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const StyledNavItem = styled.a`
+const StyledNavItem = styled(Link)`
   display: flex;
   align-items: center;
   /* height: 100%; */
@@ -23,6 +24,10 @@ const StyledNavItem = styled.a`
   }
 `;
 
-const NavItem: FC = ({ children }) => <StyledNavItem>{children}</StyledNavItem>;
+interface NavItemProps {
+  to: string;
+}
+
+const NavItem: FC<NavItemProps> = ({ children, to }) => <StyledNavItem to={to}>{children}</StyledNavItem>;
 
 export default NavItem;

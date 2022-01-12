@@ -29,13 +29,6 @@ const StyledContentWrapper = styled.div`
   position: relative;
 `;
 
-// const StyledPageWrapper = styled.div`
-//   height: 100%;
-//   padding-top: calc(100vw / 16);
-//   box-sizing: border-box;
-//   background: white;
-// `;
-
 const MainLayout = () => {
   const friends = useAppSelector(({ social }) => social.friends);
   const groups = useAppSelector(({ social }) => social.groups);
@@ -44,9 +37,7 @@ const MainLayout = () => {
     <StyledAppLayout>
       <StyledContentWrapper>
         <Navbar />
-        {/* <StyledPageWrapper> */}
         <Outlet />
-        {/* </StyledPageWrapper> */}
       </StyledContentWrapper>
       <StyledSidebar>
         <ProfileCard name="Tatsumaki" icon="5200" message="kappataz" level={420.5} />
